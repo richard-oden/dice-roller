@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-heading">The Dice Roller</h1>
+    </header>
+    <main>
+      <div>
+        <form id="multi-mod">
+          <label for="multi">Multiplier:</label>
+          <input type="text" id="multi" value="1">
+          <label for="mod">Modifier:</label>
+          <input type="text" id="mod" value="0">
+        </form>
+      </div>
+      <div class="dice-btns">
+        <button id="d4" onclick="roll(4)">d4</button>
+        <button id="d6" onclick="roll(6)">d6</button>
+        <button id="d8" onclick="roll(8)">d8</button>
+        <button id="d10" onclick="roll(10)">d10</button>
+        <button id="d12" onclick="roll(12)">d12</button>
+        <button id="d20" onclick="roll(20)">d20</button>
+        <button id="d100" onclick="roll(100)">d100</button>
+      </div>
+      <div class="result">
+        <h2>Your result will appear here.</h2>
+      </div>
+    </main>
+    <footer>
+      <p>For more information contact Richard Oden.</p>
+    </footer>
+  </body>
+</html>

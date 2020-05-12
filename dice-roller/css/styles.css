@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../font/Montserrat-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Montserrat Black';
+  src: url('../font/Montserrat-Black.otf');
+}
+
+body {
+  font-family: 'Montserrat Regular';
+  background: linear-gradient(transparent, #000),
+              #222 url('../img/d20.png');
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  background-size: cover, 25%;
+  background-attachment: fixed;
+
+  color: orange;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.main-heading {
+  font-size: 9em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+label:hover,
+label:focus {
+  color: red;
+}
+
+label:active {
+  color: goldenrod;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+input,
+button {
+  border-radius: 5px;
+  border: 1px solid orange;
+  background: none;
+  font-family: 'Montserrat Regular';
+  color: orange;
+  transition: 0.4s;
+}
+
+#d4:hover {
+  cursor: url("../cur/d4.cur"), default;
+}
+
+#d6:hover {
+  cursor: url("../cur/d6.cur"), default;
+}
+
+#d8:hover {
+  cursor: url("../cur/d8.cur"), default;
+}
+
+#d10:hover {
+  cursor: url("../cur/d10.cur"), default;
+}
+
+#d12:hover {
+  cursor: url("../cur/d12.cur"), default;
+}
+
+#d20:hover {
+  cursor: url("../cur/d20.cur"), default;
+}
+
+#d100:hover {
+  cursor: url("../cur/d100.cur"), default;
+}
+
+strong {
+  font-family: 'Montserrat Black';
+}
+
+footer {
+  padding-top: 10%;
+}
+
+/* DRY Selectors --------------------------*/
+
+button:hover,
+button:focus,
+input:hover,
+input:focus {
+  outline: 0;
+  border-radius: 10px;
+  border: 1px solid red;
+  color: red;
+  background: #333;
+}
+
+button:active,
+input:active {
+  border: 1px solid goldenrod;
+  color: goldenrod;
+  background: #666;
+}
